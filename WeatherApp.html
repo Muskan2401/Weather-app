@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="WeatherApp.css">
+    <script src="WeatherApp.js"></script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Weather Application</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <input type="text" id="location" class="form-control text-center" placeholder="Enter location" style="font-weight: bold;">
+                <span class="input-group-addon" style="background-color: #7ae17c; border: #7ae17c;">
+                    <span class="glyphicon glyphicon-search"></span>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    <p class="text-center" id="city-name"></p>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            
+                            
+                            <p id="temperature"></p> 
+                            <p id="condition"></p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="" style="max-width: 150px;" alt="Weather Icon" id="condition-icon" class="img-responsive center-block condition-img">
+                            <p id="timing"></p>
+                            <p id="date"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: bisque; max-width: 250px; padding: 5px; border-radius: 20px; text-align: center;"><h2>Additional Info</h2></div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="info-container">
+                    <h4><span class="glyphicon glyphicon-cloud"></span><span class="glyphicon glyphicon-tint"></span></h4>
+                    <h4 style="color:rgb(190, 180, 180)">HUMIDITY</h4>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-container">
+                    <h4><span class="glyphicon glyphicon-cloud"></span></h4>
+                    <h4 style="color:rgb(190, 180, 180)">WIND</h4>
+                    <p id="windspeed"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-container">
+                    <h4><span class="glyphicon glyphicon-tint"></span></h4>
+                    <h4 style="color:rgb(190, 180, 180)">PRECIPITAION</h4>
+                    <p id="precipitation"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-container">
+                    <h4><span class="glyphicon glyphicon-flash"></span></h4>
+                    <h4 style="color:rgb(190, 180, 180)">GUST</h4>
+                    <p id="gust"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
